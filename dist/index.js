@@ -9686,19 +9686,21 @@ var __webpack_exports__ = {};
 (() => {
 const core = __nccwpck_require__(2186);
 const github = __nccwpck_require__(5438);
+(async () => {
+  try {
+    const token = core.getInput("GITHUB_TOKEN");
 
-try {
-  // `who-to-greet` input defined in action metadata file
-  const nameToGreet = core.getInput("who-to-greet");
-  console.log(`Hello ${nameToGreet}!`);
-  const time = new Date().toTimeString();
-  core.setOutput("time", time);
-  // Get the JSON webhook payload for the event that triggered the workflow
-  const payload = JSON.stringify(github.context.payload, undefined, 2);
-  console.log(`The event payload: ${payload}`);
-} catch (error) {
-  core.setFailed(error.message);
-}
+    const octokit = github.getOctokit(token);
+
+    const repos = await octokit.rest.repos.listForUser({
+      username: "AlbinAxtelius",
+    });
+
+    repos.data.map((repo) => repo.name).forEach((repo) => console.log(repo));
+  } catch (error) {
+    core.setFailed(error.message);
+  }
+})();
 
 })();
 
