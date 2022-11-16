@@ -8,6 +8,6 @@ jobs:
     steps:
       - name: Hello world action step
         id: hello
-        uses: albinaxtelius/actions-testing@v1.2-beta.1
+        uses: albinaxtelius/actions-testing@v1.2-beta.2
         with:
           GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
