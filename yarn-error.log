@@ -1,0 +1,43 @@
+Arguments: 
+  /Users/albin/.nvm/versions/node/v16.15.1/bin/node /usr/local/bin/yarn add @actions/core @actions/toolkit
+
+PATH: 
+  /Users/albin/.nvm/versions/node/v16.15.1/bin:/Users/albin/.jenv/shims:/Users/albin/.jenv/bin:/opt/homebrew/bin:/Users/albin/google-cloud-sdk/bin:/Users/albin/bin:/usr/local/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/usr/local/share/dotnet:~/.dotnet/tools:/Library/Apple/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Users/albin/.dotnet/tools:/Users/albin/.yarn/bin:/Users/albin/Library/Android/sdk/emulator:/Users/albin/Library/Android/sdk/tools:/Users/albin/Library/Android/sdk/tools/bin:/Users/albin/Library/Android/sdk/platform-tools:/emulator:/platform-tools:/Users/albin/.fluttersdk/flutter/bin:/Users/albin/.yarn/bin:/Users/albin/.pub-cache/bin:/Users/albin/.dotnet/tools:/usr/local/share/dotnet
+
+Yarn version: 
+  1.22.17
+
+Node version: 
+  16.15.1
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@actions%2ftoolkit: Not found
+      at Request.params.callback [as _callback] (/usr/local/lib/node_modules/yarn/lib/cli.js:67029:18)
+      at Request.self.callback (/usr/local/lib/node_modules/yarn/lib/cli.js:140883:22)
+      at Request.emit (node:events:527:28)
+      at Request.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:141855:10)
+      at Request.emit (node:events:527:28)
+      at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:141777:12)
+      at Object.onceWrapper (node:events:641:28)
+      at IncomingMessage.emit (node:events:539:35)
+      at endReadableNT (node:internal/streams/readable:1345:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+npm manifest: 
+  {
+    "name": "actions-testing",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "git@github.com:AlbinAxtelius/actions-testing.git",
+    "author": "Albin Axtelius <albin@axtelius.se>",
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
